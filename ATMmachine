@@ -1,0 +1,10 @@
+print("*"*20,"ATM MACHINE","*"*20)
+n=int(input("Enter the amount:))
+l=[500,200,100,50,20,10,5,2,1]
+count=0
+for i in l:
+    notes=n//i
+count+=notes
+print(f"{i}Notes:",notes)
+n=n%i
+print("minimum number of notes:",count)
