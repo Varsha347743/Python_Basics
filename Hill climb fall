@@ -1,0 +1,37 @@
+import random
+def diceroll():
+    num=random.randint(1,6)
+    return num
+    print("*"*20,"HILL CLIMB FALL","*",*20)
+    player1=input("enter player1 name:")
+    player2=input("enter player2 name:")
+    p1list=[]
+    p2list=[]
+    i=0
+    while(sum(p1list)!=10 and sum(p2list)!=10):
+        if(i%2==0 and input(f"\n{player1} entee p to play:")=='p'):
+            if(sum(p1list)<10):
+                n=diceroll()
+                print("dice no ----> ",n)
+                else:
+                    p1list.clear()
+                    i+=1 
+                    print ("step no.",sum(p1list))
+                    elif(i%2==0 and input(f"\n{player2} enter p to play:")=='p'):
+                        if(sum(p2list)<10)
+                        n=diceroll()
+      print("dice no. ------>",n)
+      p2list.append(n)
+ else:
+     p2list.clear()
+ i+=1
+ print ("step no.",sum(p2list))
+else:
+    print("Thank you")
+if(sum(p1list)==10):
+    print("*"*20,f"{player1} is the winner....","*"*20)
+else:
+    print("*"*20,f"{player2} is the winner....","*"*20)
+
+
+
